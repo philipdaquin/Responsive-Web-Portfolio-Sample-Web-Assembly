@@ -1,5 +1,5 @@
-use crate::routes::{home::Home, blog::Blog, AppRoute};
-
+use crate::routes::{home::Home, blog::Blog, portfolio::Portfolio, AppRoute};
+use crate::components::{navbar::Navbar};
 use yew::prelude::*;
 use yew_router::prelude::*;
 
@@ -24,22 +24,14 @@ impl Component for Main {
     fn view(&self) -> Html {
         html! {
             <>
-                <header class="navbar">
-                    <ul>
-                        <li>
-                            <RouterAnchor<AppRoute> route=AppRoute::Home><a>{"Home"}</a></RouterAnchor<AppRoute>>
-                        </li>
-                        <li>
-                            <RouterAnchor<AppRoute> route=AppRoute::Blog><a>{"Blog"}</a></RouterAnchor<AppRoute>>
-                        </li>
-                    </ul>
-                </header>
+                <Navbar/>
                 <div class="main">
                     <Router<AppRoute, ()>
                         render = Router::render(|switch: AppRoute| {
                             match switch {
                                 AppRoute::Home => html!{ <Home/> },
                                 AppRoute::Blog => html!{ <Blog/> },
+                                AppRoute::Portfolio => html!{ <Portfolio/> },
                             }
                         })
                     />

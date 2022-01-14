@@ -1,5 +1,6 @@
 pub mod blog;
 pub mod home;
+pub mod portfolio;
 
 use yew_router::prelude::*;
 
@@ -9,4 +10,6 @@ pub enum AppRoute {
     Blog,
     #[to = "/"]
     Home,
+    #[to = "/portfolio"]
+    Portfolio,
 }
