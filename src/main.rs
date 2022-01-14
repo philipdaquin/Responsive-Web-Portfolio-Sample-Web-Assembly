@@ -1,4 +1,5 @@
 mod app;
+mod routes;
 
 use crate::app::Main;
 fn main() {

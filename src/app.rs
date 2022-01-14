@@ -1,16 +1,7 @@
+use crate::routes::{home::Home, blog::Blog, AppRoute};
+
 use yew::prelude::*;
 use yew_router::prelude::*;
-
-mod pages;
-use self::pages::*;
-
-#[derive(yew_router::Switch, Clone)]
-pub enum MainRoute {
-    #[to = "/blog"]
-    Blog,
-    #[to = "/"]
-    Home,
-}
 
 pub struct Main;
 
@@ -36,19 +27,19 @@ impl Component for Main {
                 <header class="navbar">
                     <ul>
                         <li>
-                            <RouterAnchor<MainRoute> route=MainRoute::Home><a>{"Home"}</a></RouterAnchor<MainRoute>>
+                            <RouterAnchor<AppRoute> route=AppRoute::Home><a>{"Home"}</a></RouterAnchor<AppRoute>>
                         </li>
                         <li>
-                            <RouterAnchor<MainRoute> route=MainRoute::Blog><a>{"Blog"}</a></RouterAnchor<MainRoute>>
+                            <RouterAnchor<AppRoute> route=AppRoute::Blog><a>{"Blog"}</a></RouterAnchor<AppRoute>>
                         </li>
                     </ul>
                 </header>
                 <div class="main">
-                    <Router<MainRoute, ()>
-                        render = Router::render(|switch: MainRoute| {
+                    <Router<AppRoute, ()>
+                        render = Router::render(|switch: AppRoute| {
                             match switch {
-                                MainRoute::Home => html!{ <Home/> },
-                                MainRoute::Blog => html!{ <Blog/> },
+                                AppRoute::Home => html!{ <Home/> },
+                                AppRoute::Blog => html!{ <Blog/> },
                             }
                         })
                     />
