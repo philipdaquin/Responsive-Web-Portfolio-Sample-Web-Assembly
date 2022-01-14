@@ -20,9 +20,10 @@ impl Component for Portfolio {
 
     fn view(&self) -> Html {
         html! {
-            <div class="home">
-                <h1>{ "Portfolio" }</h1>
-            </div>
+            <>
+                <h1>{"PORTFOLIO PAGE"}</h1>
+                <img src="https://cdn.dribbble.com/users/686678/screenshots/11012795/media/f71c393120e4d9f55d51e4a8507fc8ca.png" />
+            </>
         }
     }
 }

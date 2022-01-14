@@ -1,8 +1,8 @@
 use yew::prelude::*;
 
-pub struct Blog;
+pub struct About;
 
-impl Component for Blog {
+impl Component for About {
     type Message = ();
     type Properties = ();
 
@@ -21,6 +21,7 @@ impl Component for Blog {
     fn view(&self) -> Html {
         html! {
             <>
+                <h1>{"ABOUT PAGE"}</h1>
                 <img src="https://http.cat/404.jpg" />
             </>
         }

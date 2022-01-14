@@ -1,5 +1,7 @@
 use yew::prelude::*;
-
+use yew_router::prelude::*;
+use crate::routes::{AppRoute, 
+    home::Home, about::About, portfolio::Portfolio};
 pub struct Navbar;
 
 impl Component for Navbar {
@@ -20,21 +22,24 @@ impl Component for Navbar {
 
     fn view(&self) -> Html {
         html! {
-            <>
-                <header class="navbar">
-                    <ul>
-                        <li>
-                            <RouterAnchor<AppRoute> route=AppRoute::Home><a>{"Home"}</a></RouterAnchor<AppRoute>>
-                        </li>
-                        <li>
-                            <RouterAnchor<AppRoute> route=AppRoute::Blog><a>{"Blog"}</a></RouterAnchor<AppRoute>>
-                        </li>
-                        <li>
-                            <RouterAnchor<AppRoute> route=AppRoute::Portfolio><a>{"Portfolio"}</a></RouterAnchor<AppRoute>>
-                        </li>
-                    </ul>
+        
+                <header class="l-header" id="header">
+                    <nav class="nav bd-container">
+                        <RouterAnchor<AppRoute> route=AppRoute::Home classes="nav__logo"><a>{"Philip Daquin"}</a></RouterAnchor<AppRoute>>
+                    
+                        <div class="nav__menu" id="nav-menu">
+                            <ul class="nav__list">
+                                <li class="nav__item"><RouterAnchor<AppRoute> route=AppRoute::Home classes="nav__link"><a>{"Home"}</a></RouterAnchor<AppRoute>></li>
+                                <li class="nav__item"><RouterAnchor<AppRoute> route=AppRoute::About classes="nav__link"><a>{"About"}</a></RouterAnchor<AppRoute>></li>
+                                <li class="nav__item"><RouterAnchor<AppRoute> route=AppRoute::Portfolio classes="nav__link"><a>{"Portfolio"}</a></RouterAnchor<AppRoute>></li>
+                            </ul>
+                        </div>
+                        <div class="nav__toggle" id="nav-toggle">
+                            <i class="bx bx-menu"></i>
+                        </div>
+                    </nav>
                 </header>
-            </>
+     
         }
     }
 }

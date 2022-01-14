@@ -1,4 +1,4 @@
-use crate::routes::{home::Home, blog::Blog, portfolio::Portfolio, AppRoute};
+use crate::routes::{home::Home, about::About, portfolio::Portfolio, AppRoute};
 use crate::components::{navbar::Navbar};
 use yew::prelude::*;
 use yew_router::prelude::*;
@@ -30,7 +30,7 @@ impl Component for Main {
                         render = Router::render(|switch: AppRoute| {
                             match switch {
                                 AppRoute::Home => html!{ <Home/> },
-                                AppRoute::Blog => html!{ <Blog/> },
+                                AppRoute::About => html!{ <About/> },
                                 AppRoute::Portfolio => html!{ <Portfolio/> },
                             }
                         })
