@@ -11,17 +11,26 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="/styles-f61e868450065bb6.css">
+  <link rel="stylesheet" href="/styles-b4f7f53c7bd0183c.css">
+  <!-- Main JS Interop -->
+  <script type="module" src="/main.js"></script>
+  <script data-trunk="" rel="inline" type="module" src="/main.js"></script>
 
-<link rel="preload" href="/index-9d14c313113553d3_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/index-9d14c313113553d3.js"></head>
+<link rel="preload" href="/index-9cea6198a6d701ce_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/index-9cea6198a6d701ce.js"></head>
 <body>
+  <!-- Scroll-top -->
+  <a href="#" class="scrolltop " id="scroll-top">
+    <i class="bx bx-chevron-up scrolltop-icon"></i>
+  </a>
+
+
   <header class="l-header" id="header">
     <nav class="nav bd-container">
       <a href="#" class="nav__logo">Philip Daquin</a>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
           <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
@@ -33,8 +42,20 @@
       </div>
     </nav>
   </header>  
+  <main class="l-main">
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home__container bd-container bd-grid">
+        <div class="home__data">
+          <span class="hpme__greeting">Hello, my name is</span>
+          <h1 class="home__name">Philip Daquin</h1>
+          <span class="home__profession">Web Developer</span>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<script type="module">import init from '/index-9d14c313113553d3.js';init('/index-9d14c313113553d3_bg.wasm');</script><script>(function () {
+<script type="module">import init from '/index-9cea6198a6d701ce.js';init('/index-9cea6198a6d701ce_bg.wasm');</script><script>(function () {
     var url = 'ws://' + window.location.host + '/_trunk/ws';
     var poll_interval = 5000;
     var reload_upon_connect = () => {
