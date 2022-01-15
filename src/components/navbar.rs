@@ -38,6 +38,11 @@ impl Component for Navbar {
         let show_menu = if self.is_active {"nav__menu show-menu"} else { " nav__menu" };
 
         html! {
+            <>
+                <a href="#" class="scrolltop" id="scroll-top">
+                    <i class="bx bx-chevron-up scrolltop-icon"></i>
+                </a>
+            
                 <header class="l-header" id="header">
                     <nav class="nav bd-container">
                         <RouterAnchor<AppRoute> route=AppRoute::Home classes="nav__logo"><a>{"Philip Daquin"}</a></RouterAnchor<AppRoute>>
@@ -55,11 +60,9 @@ impl Component for Navbar {
                                 <li class="nav__item"><RouterAnchor<AppRoute> route=AppRoute::Portfolio classes="nav__link"><a>{"Portfolio"}</a></RouterAnchor<AppRoute>></li>
                             </ul>
                         </div>
-                        
-                       
                     </nav>
                 </header>
-     
+            </>
         }
     }
 }
