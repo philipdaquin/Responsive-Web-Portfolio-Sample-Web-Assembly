@@ -298,3 +298,27 @@
 .button-light    { 
     background-color: var(--first-color-light);
 }
+/* About  */
+.about__data { 
+    text-align: center;
+}
+.about__description .span-1 { 
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--first-color);
+}
+.about__number { 
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+    display: block;
+}
+.about__img { 
+    justify-self: center;
+    width: 220px;
+    border-radius: 0.5rem;
+}
+
+.qualification__box { 
+    align-items: center;
+    text-align: center;
+}

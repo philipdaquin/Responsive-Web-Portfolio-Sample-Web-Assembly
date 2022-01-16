@@ -20,6 +20,7 @@ impl Component for Home {
 
     fn view(&self) -> Html {
         html! {
+            
             <section class="home" id="home">
                 <div class="home__container bd-container bd-grid">
                     <div class="home__data">
@@ -38,6 +39,8 @@ impl Component for Home {
                     </div>
                 </div>
             </section>
+          
+           
         }
     }
 }

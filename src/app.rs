@@ -25,7 +25,7 @@ impl Component for Main {
         html! {
             <>
                 <Navbar/>
-                <div class="main">
+                <main class="main">
                     <Router<AppRoute, ()>
                         render = Router::render(|switch: AppRoute| {
                             match switch {
@@ -35,7 +35,7 @@ impl Component for Main {
                             }
                         })
                     />
-                </div>
+                </main>
             </>
         }
     }
