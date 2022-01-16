@@ -1,7 +1,6 @@
 use yew::prelude::*;
 use yew_router::prelude::*;
-use crate::routes::{AppRoute, 
-    home::Home, about::About, portfolio::Portfolio};
+use crate::routes::{AppRoute};
 pub struct Navbar { 
     link: ComponentLink<Self>,
     is_active: bool,
