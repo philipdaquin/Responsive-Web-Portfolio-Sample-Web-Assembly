@@ -277,14 +277,14 @@
         <h2 class="section-title">Portfolio</h2>
 
         <div class="portfolio__nav">
-          <span class="portfolio__item">All</span>
-          <span class="portfolio__item">Web</span>
-          <span class="portfolio__item">UI/UX</span>
-          <span class="portfolio__item">App</span>
+          <span class="portfolio__item active-portfolio" data-filter="all">All</span>
+          <span class="portfolio__item" data-filter=".web"> Web</span>
+          <span class="portfolio__item" data-filter=".ux">UI/UX</span>
+          <span class="portfolio__item" data-filter=".app">App</span>
         </div>
 
         <div class="portfolio__container bd-grid">
-          <div class="portfolio__content">
+          <div class="portfolio__content mix web">
             <a href="#"><img src="assets/work1.jpg" alt="" class="portfolio__img"></a>
             <div class="portfolio__data">
               <span class="portfolio__subtitle">Web Development</span>
@@ -293,7 +293,7 @@
             </div>
           </div>
 
-          <div class="portfolio__content">
+          <div class="portfolio__content mix web">
             <a href="#"><img src="assets/work2.jpg" alt="" class="portfolio__img"></a>
             <div class="portfolio__data">
               <span class="portfolio__subtitle">UX Design</span>
@@ -302,7 +302,7 @@
             </div>
           </div>
 
-          <div class="portfolio__content">
+          <div class="portfolio__content mix ux">
             <a href="#"><img src="assets/work3.jpg" alt="" class="portfolio__img"></a>
             <div class="portfolio__data">
               <span class="portfolio__subtitle">Web Development</span>
@@ -310,7 +310,8 @@
               <a href="#" class="button button-link">View Details</a>
             </div>
           </div>
-          <div class="portfolio__content">
+          
+          <div class="portfolio__content mix ux">
             <a href="#"><img src="assets/work4.jpg" alt="" class="portfolio__img"></a>
             <div class="portfolio__data">
               <span class="portfolio__subtitle">Web Development</span>
@@ -318,7 +319,8 @@
               <a href="#" class="button button-link">View Details</a>
             </div>
           </div>
-          <div class="portfolio__content">
+         
+          <div class="portfolio__content mix app">
             <a href="#"><img src="assets/work5.jpg" alt="" class="portfolio__img"></a>
             <div class="portfolio__data">
               <span class="portfolio__subtitle">Mobile App</span>
@@ -326,12 +328,42 @@
               <a href="#" class="button button-link">View Details</a>
             </div>
           </div>
-          <div class="portfolio__content">
+          
+          <div class="portfolio__content mix app">
             <a href="#"><img src="assets/work6.jpg" alt="" class="portfolio__img"></a>
             <div class="portfolio__data">
               <span class="portfolio__subtitle">Mobile App</span>
               <a href=""><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
               <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- Testimonial -->
+      <section class="testimonial portfolio section bd-contianer">
+        <span class="section-subtitle">My client saying</span>
+        <h2 class="section-title">Testimonial</h2>
+
+        <div class="testimonial__container">
+          <div>
+            <div class="testimonial__content">
+              <img src="assets/testimonial1.jpg" alt="" class="testimonial__img">
+              <h3 class="testimonial__title">Nik Holly</h3>
+              <span class="testimonial__client">Client</span>
+              <p class="testimonial__description">This person built the next generation of mobility services that led to revolutionise the future of cities</p>
+            </div>
+            <div class="testimonial__content">
+              <img src="assets/testimonial1.jpg" alt="" class="testimonial__img">
+              <h3 class="testimonial__title">Nik Holly</h3>
+              <span class="testimonial__client">Client</span>
+              <p class="testimonial__description">This person built the next generation of mobility services that led to revolutionise the future of cities</p>
+            </div>
+            <div class="testimonial__content">
+              <img src="assets/testimonial1.jpg" alt="" class="testimonial__img">
+              <h3 class="testimonial__title">Nik Holly</h3>
+              <span class="testimonial__client">Client</span>
+              <p class="testimonial__description">This person built the next generation of mobility services that led to revolutionise the future of cities</p>
             </div>
           </div>
         </div>
