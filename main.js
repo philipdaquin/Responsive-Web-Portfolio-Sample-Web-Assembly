@@ -1,3 +1,4 @@
+
 // Show menu
 const showMenu = (toggleId, navId) => { 
     const toggle = document.getElementById(toggleId),
@@ -73,3 +74,25 @@ function activePortfolio() {
     }
 }
 linkPortfolio.forEach(l => l.addEventListener('click', activePortfolio))
+
+
+// Swipe Carousel
+const swiper = new Swiper('.testimonial__container', {
+    spaceBetween: 16,
+    loop: true,
+    grabCursor: true,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true, 
+    },
+    breakpoints:  { 
+        640: { 
+            slidesPerView: 2,
+        },
+        1024: { 
+            slidesPerView: 3,
+        },
+
+    }
+  });
