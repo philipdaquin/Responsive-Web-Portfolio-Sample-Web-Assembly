@@ -246,7 +246,7 @@ impl Component for Home {
                         </div>
 
                         <div>
-                            <a href="#" class="button button-white">{"Look at the Prototype "}
+                            <a href="#" class="button button-white">{"Look at the Prototype"}
                             <i class= "bx bxl-figma"></i>  
                             </a>
                         </div>
@@ -318,6 +318,87 @@ impl Component for Home {
                         <a href="#" class="button button-link">{"View Details"}</a>
                         </div>
                     </div>
+                    </div>
+                </section>
+                //<!-- Testimonial -->
+                <section class="testimonial  section bd-contianer">
+                    <span class="section-subtitle">{"My client saying"}</span>
+                    <h2 class="section-title">{"Testimonial"}</h2>
+
+                    <div class="testimonial__container swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__content swiper-slide">
+                        <img src="assets/testimonial1.jpg" alt="" class="testimonial__img"/>
+                        <h3 class="testimonial__title">{"Nik Holly"}</h3>
+                        <span class="testimonial__client">{"Client"}</span>
+                        <p class="testimonial__description">{"This person built the next generation of mobility services that led to revolutionise the future of cities"}</p>
+                        </div>
+
+                        <div class="testimonial__content swiper-slide">
+                        <img src="assets/testimonial2.jpg" alt="" class="testimonial__img"/>
+                        <h3 class="testimonial__title">{"Sara Mill"}</h3>
+                        <span class="testimonial__client">{"Client"}</span>
+                        <p class="testimonial__description">{"This person built the next generation of mobility services that led to revolutionise the future of cities"}</p>
+                        </div>
+
+                        <div class="testimonial__content swiper-slide">
+                        <img src="assets/testimonial3.jpg" alt="" class="testimonial__img"/>
+                        <h3 class="testimonial__title">{"Clay Mitchel"}</h3>
+                        <span class="testimonial__client">{"Client"}</span>
+                        <p class="testimonial__description">{"This person built the next generation of mobility services that led to revolutionise the future of cities"}</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    </div>
+                </section>
+
+                //<!-- Contact Me  -->
+                <section class="contact section section bd-contianer" id="contact">
+                    <span class="section-subtitle">{"For Project"}</span>
+                    <h2 class="section-title">{"Contact Me"}</h2>
+
+                    <div class="contact__container bd-grid">
+
+                    <div class="contact__box">
+                        <i class="bx bx-home-alt contact__icon"></i>
+                        <h3 class="contact__title">{"Location"}</h3>
+                        <span class="contact__description">{"Cupertuino - San Francisco"}</span>
+                    </div>
+
+                    <div class="contact__box">
+                        <i class="bx bx-phone contact__icon"></i>
+                        <h3 class="contact__title">{"Phone"}</h3>
+                        <span class="contact__description">{"999-777-999"}</span>
+                    </div>
+
+                    <div class="contact__box">
+                        <i class="bx bx-envelope contact__icon"></i>
+                        <h3 class="contact__title">{"Email"}</h3>
+                        <span class="contact__description">{"123@gmail.com"}</span>
+                    </div>
+
+                    <div class="contact__box">
+                        <i class="bx bx-chat contact__icon"></i>
+                        <h3 class="contact__title">{"Chat"}</h3>
+                        <div>
+                        <a href="#" class="contact__social"><i class="bx bxl-linkedin"></i></a>
+                        <a href="#" class="contact__social"><i class="bx bxl-github"></i></a>
+                        <a href="#" class="contact__social"><i class="bx bxl-paypal"></i></a>
+                        </div>
+                    </div>
+                    <form action="" class="contact__form"> 
+                        <div class="contact__input">
+                        <input type="text" placeholder="Name" class="contact__input"/>
+                        <input type="email" placeholder="Email" class="contact__input"/>
+                        </div>
+
+                        <div class="contact__input">
+                        <input type="text" placeholder="Project" class="contact__input"/>
+                        <input type="number" placeholder="Number" class="contact__input"/>
+                        </div>
+                        <textarea name="" id="" cols="0" rows="10" placeholder="Message "  class="contact__input"></textarea>
+                        <input type="submit" value="Send Message" class="button contact__button"/>
+                    </form>
                     </div>
                 </section>
 
