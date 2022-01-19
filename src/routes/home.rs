@@ -353,7 +353,7 @@ impl Component for Home {
                 </section>
 
                 //<!-- Contact Me  -->
-                <section class="contact section section bd-contianer" id="contact">
+                <section class="contact section section bd-container" id="contact">
                     <span class="section-subtitle">{"For Project"}</span>
                     <h2 class="section-title">{"Contact Me"}</h2>
 
