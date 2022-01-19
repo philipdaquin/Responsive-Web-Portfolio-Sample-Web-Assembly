@@ -1,5 +1,5 @@
 use crate::routes::{home::Home, about::About, portfolio::Portfolio, AppRoute};
-use crate::components::{navbar::Navbar};
+use crate::components::{navbar::Navbar, footer::Footer};
 use yew::prelude::*;
 use yew_router::prelude::*;
 
@@ -36,6 +36,7 @@ impl Component for Main {
                         })
                     />
                 </main>
+                <Footer/>
             </>
         }
     }

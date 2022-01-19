@@ -16,14 +16,16 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="/styles-9aae0f8d56e5bbc7.css">
+  <link rel="stylesheet" href="/styles-28e1d3c629bc07f8.css">
   <!-- Main JS Interop -->
   <script type="module" src="/main.js"></script>
   <script data-trunk="" rel="inline" type="module" src="/main.js"></script>
   <script src="assets/swiper-bundle.min.js"></script>
+  <!-- GSAP -->
+  <script src="assets/gsap.min.js"></script>
 
-<link rel="preload" href="/index-33830932090866ce_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/index-33830932090866ce.js"></head>
+<link rel="preload" href="/index-a84718433b969afd_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/index-a84718433b969afd.js"></head>
 <body>
   <!-- Scroll-top -->
   <a href="#" class="scrolltop " id="scroll-top">
@@ -56,7 +58,7 @@
           <span class="home__greeting">Hello, my name is</span>
           <h1 class="home__name">Philip Daquin</h1>
           <span class="home__profession">Product Designer</span>
-          <a download="" href="assets/download.png" class="button button-light">Download Cv</a>
+          <a download="" href="assets/download.png" class="button button-light home__button">Download Cv</a>
         </div>
         <div class="home__social">
           <a href="#" class="home__social-icon"><i class="bx bxl-facebook-square"></i></a>
@@ -408,17 +410,39 @@
               <a href="#" class="contact__social"><i class="bx bxl-linkedin"></i></a>
               <a href="#" class="contact__social"><i class="bx bxl-github"></i></a>
               <a href="#" class="contact__social"><i class="bx bxl-paypal"></i></a>
-
             </div>
           </div>
-      
+          <form action="" class="contact__form"> 
+            <div class="contact__input">
+              <input type="text" placeholder="Name" class="contact__input">
+              <input type="email" placeholder="Email" class="contact__input">
+            </div>
 
-
+            <div class="contact__input">
+              <input type="text" placeholder="Project" class="contact__input">
+              <input type="number" placeholder="Number" class="contact__input">
+            </div>
+              <textarea name="" id="" cols="0" rows="10" placeholder="Message " class="contact__input"></textarea>
+              <input type="submit" value="Send Message" class="button contact__button">
+          </form>
         </div>
       </section>
   </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container bd-container">
+      <h1 class="footer__title">Philip Daquin</h1>
+      <p class="footer__description">I am Philip Daquin and this is my first attempt to using Rust and Web Assembly for Frontend Engineering</p>
+      <div class="footer__social">
+       <a href="#" class="footer__link"><i class="bx bxl-linkedin"></i></a>
+       <a href="#" class="footer__link"><i class="bx bxl-github"></i></a> 
+       <a href="#" class="footer__link"><i class="bx bxl-dribbble"></i></a> 
+      </div>
+      <p class="footer__copy">© 2022 Gamma Finance. All Rights Reserved</p>
+    </div>
+  </footer>
 
-<script type="module">import init from '/index-33830932090866ce.js';init('/index-33830932090866ce_bg.wasm');</script><script>(function () {
+<script type="module">import init from '/index-a84718433b969afd.js';init('/index-a84718433b969afd_bg.wasm');</script><script>(function () {
     var url = 'ws://' + window.location.host + '/_trunk/ws';
     var poll_interval = 5000;
     var reload_upon_connect = () => {

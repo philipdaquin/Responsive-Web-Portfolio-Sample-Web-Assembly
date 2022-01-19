@@ -161,12 +161,51 @@ impl Component for Home {
                                         </span>
                                     </div>
                                 </div>
-                            </div>
-                            </div>
+                                <div class="bd-grid">
+                                    <div class="qualification__data">
+                                        <h3 class="qualification__area">{"Runtime Development Engineer"}</h3>
+                                       // <!-- Rust Engineer -->
+                                        <div class="qualification__box">
+                                        
+                                        <span class="qualification__work">
+                                            <i class="bx bx-calendar-alt qualification__icon"></i>
+                                            {"September 2021 - December 2021"}
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div class="bd-grid">
+                                        <div class="qualification__data">
+                                        <h3 class="qualification__area">{"UI/ UX Google Certificate"}</h3>
+                                        //<!-- Rust Engineer -->
+                                        <div class="qualification__box">
+                                            <span class="qualification__work">
+                                            <i class="bx bx-briefcase-alt qualification__icon"></i>
+                                            {"Link to Adobe Portfolio here.."}
+                                            </span>
+                                            <span class="qualification__work">
+                                            <i class="bx bx-calendar-alt qualification__icon"></i>
+                                           {" May 2021 - Nov 2021"}
+                                            </span>
+                                      </div>
+                                    </div>
+                                 </div>
+                               </div>
+                             </div>
+                          </div>
                         </div>
-                        </div>
+                      </div>
                     </div>
                 </section>
+
+                // Services
+
+
+
+
+
+
+
+                
             </>
         }
     }
