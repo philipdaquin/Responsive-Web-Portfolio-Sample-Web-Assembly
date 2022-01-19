@@ -191,21 +191,47 @@ impl Component for Home {
                                  </div>
                                </div>
                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
                 </section>
 
                 // Services
+                <section class="services bd-container" id="services">
+                <span class="section-subtitle">{"What I offer "}</span>
+                <h2 class="section-title">{"Services"}</h2>
 
+                <div class="services__container bd-grid">
+                    <div class="services__data">
+                    <i class="bx bx-palette services__icon"></i>
+                    <h3 class="services__title">{"UI/ UX Design"}</h3>
+                    <p class="services__description">{" Service that I offer and work, 
+                        with years of experience in the work area."}
+                    </p>
+                    <a href="#" class="button">{"Know More"}</a>
+                    </div>
 
+                    <div class="services__data">
+                    <i class="bx bx-laptop services__icon"></i>
+                    <h3 class="services__title">{"Product Design"}</h3>
+                    <p class="services__description"> {"Service that I offer and work, 
+                        with years of experience in the work area."}
+                    </p>
+                    <a href="#" class="button">{"Know More"}</a>
+                    </div>
 
-
-
-
-
+                    <div class="services__data">
+                    <i class="bx bx-palette services__icon"></i>
+                    <h3 class="services__title">{"Web Engineering"}</h3>
+                    <p class="services__description"> {"Service that I offer and work, 
+                        with years of experience in the work area."}
+                    </p>
+                    <a href="#" class="button">{"Know More"}</a>
+                    </div>
                 
+                </div>
+                </section>
             </>
         }
     }
