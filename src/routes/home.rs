@@ -232,6 +232,95 @@ impl Component for Home {
                 
                 </div>
                 </section>
+                //<!-- Current Projects -->
+                <section class="project section bd-container">
+                    <div class="project__container bd-grid">
+                        <div class="project__data">
+                            <i class="bx bx-traffic-cone project__icon" ></i>
+                        </div>
+
+                        <div>
+                            <h2 class="project__title">{"Current Projects in the Workshop👷"}</h2>
+                            <h3 class="project__subtitle">{"Porteurs | Automated RideSharing Services"}</h3>
+                            <p class="project_description">{"A Substrate Based Project Aimed At Revolutionalising Mobility Services With Blockchain Services"}</p>
+                        </div>
+
+                        <div>
+                            <a href="#" class="button button-white">{"Look at the Prototype "}
+                            <i class= "bx bxl-figma"></i>  
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                //<!-- Portfolio -->
+                <section class="portfolio section bd-container" id="portfolio ">
+                    <span class="section-subtitle">{"My recent work"}</span>
+                    <h2 class="section-title">{"Portfolio"}</h2>
+
+                    <div class="portfolio__nav">
+                    <span class="portfolio__item active-portfolio" data-filter="all">{"All"}</span>
+                    <span class="portfolio__item" data-filter=".web">{" Web"}</span>
+                    <span class="portfolio__item" data-filter=".ux">{"UI/UX"}</span>
+                    <span class="portfolio__item" data-filter=".app">{"App"}</span>
+                    </div>
+
+                    <div class="portfolio__container bd-grid">
+                    <div class="portfolio__content mix web">
+                        <a href="#"><img src="assets/work1.jpg" alt="" class="portfolio__img"/></a>
+                        <div class="portfolio__data">
+                        <span class="portfolio__subtitle">{"Web Development"}</span>
+                        <a href=""><h2 class="portfolio__title">{"New portfolio of work done for a client."}</h2></a>
+                        <a href="#" class="button button-link">{"View Details"}</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__content mix web">
+                        <a href="#"><img src="assets/work2.jpg" alt="" class="portfolio__img"/></a>
+                        <div class="portfolio__data">
+                        <span class="portfolio__subtitle">{"UX Design"}</span>
+                        <a href=""><h2 class="portfolio__title">{"New portfolio of work done for a client."}</h2></a>
+                        <a href="#" class="button button-link">{"View Details"}</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__content mix ux">
+                        <a href="#"><img src="assets/work3.jpg" alt="" class="portfolio__img"/></a>
+                        <div class="portfolio__data">
+                        <span class="portfolio__subtitle">{"Web Development"}</span>
+                        <a href=""><h2 class="portfolio__title">{"New portfolio of work done for a client."}</h2></a>
+                        <a href="#" class="button button-link">{"View Details"}</a>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio__content mix ux">
+                        <a href="#"><img src="assets/work4.jpg" alt="" class="portfolio__img"/></a>
+                        <div class="portfolio__data">
+                        <span class="portfolio__subtitle">{"Web Development"}</span>
+                        <a href=""><h2 class="portfolio__title">{"New portfolio of work done for a client."}</h2></a>
+                        <a href="#" class="button button-link">{"View Details"}</a>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio__content mix app">
+                        <a href="#"><img src="assets/work5.jpg" alt="" class="portfolio__img"/></a>
+                        <div class="portfolio__data">
+                        <span class="portfolio__subtitle">{"Mobile App"}</span>
+                        <a href=""><h2 class="portfolio__title">{"New portfolio of work done for a client."}</h2></a>
+                        <a href="#" class="button button-link">{"View Details"}</a>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio__content mix app">
+                        <a href="#"><img src="assets/work6.jpg" alt="" class="portfolio__img"/></a>
+                        <div class="portfolio__data">
+                        <span class="portfolio__subtitle">{"Mobile App"}</span>
+                        <a href=""><h2 class="portfolio__title">{"New portfolio of work done for a client."}</h2></a>
+                        <a href="#" class="button button-link">{"View Details"}</a>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+
             </>
         }
     }
