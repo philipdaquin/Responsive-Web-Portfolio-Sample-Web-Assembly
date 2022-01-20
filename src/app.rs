@@ -15,7 +15,7 @@ impl Component for Main {
     }
 
     fn update(&mut self, _msg: Self::Message) -> ShouldRender {
-        unimplemented!()
+        true
     }
 
     fn change(&mut self, _props: Self::Properties) -> ShouldRender {
@@ -26,7 +26,6 @@ impl Component for Main {
         html! {
             <>
                 <Navbar/>
-                
                 <main class="main">
                     <Router<AppRoute, ()>
                         render = Router::render(|switch: AppRoute| {
