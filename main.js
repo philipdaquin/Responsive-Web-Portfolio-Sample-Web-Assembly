@@ -10,6 +10,7 @@ const showMenu = (toggleId, navId) => {
         })
     }
 }
+
 showMenu('nav-toggle', 'nav-menu')
 //  Remove Menu Mobile 
 const navLink = document.querySelectorAll('.nav__link')
@@ -18,6 +19,8 @@ function linkAction() {
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
 // Scroll Sections Active lInk
 const sections = document.querySelectorAll('section[id]')
 
@@ -37,6 +40,7 @@ function scrollActive() {
         }
     })
 }
+
 window.addEventListener('scroll', scrollActive)
 
 // Change Background Header
@@ -50,7 +54,7 @@ window.addEventListener('scroll', scrollHeader)
 // Show Scroll TOp
 function scrollTop() { 
     const scrollTop = document.getElementById('scroll-top')
-    if(this.scrollY >= 560) scrollTop.classList.add('show=scroll'); else scrollTop.classList.remove('show-scroll')
+    if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 
 window.addEventListener('scroll', scrollTop)
