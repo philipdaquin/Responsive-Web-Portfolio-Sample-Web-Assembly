@@ -1,8 +1,7 @@
 mod app;
 mod routes;
 mod components;
-//mod interop;
-mod index;
+
 
 use crate::app::Main;
 
